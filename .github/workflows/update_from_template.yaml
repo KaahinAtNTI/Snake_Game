@@ -1,0 +1,22 @@
+name: Update from Template
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # This sets the action to run daily
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.UPDATE_TOKEN }}
+
+    - name: Add remote
+      run: |
+        git remote add upstream https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+        git fetch upstream
+        git merge upstream/main
+        git push

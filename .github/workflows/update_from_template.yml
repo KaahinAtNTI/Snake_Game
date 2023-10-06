@@ -16,7 +16,7 @@ jobs:
 
     - name: Add remote
       run: |
-        git remote add upstream https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+        git remote add upstream https://github.com/NTI-Tillampad-Programmering-2324/Snake_Game.git
         git fetch upstream
         git merge upstream/main
         git push

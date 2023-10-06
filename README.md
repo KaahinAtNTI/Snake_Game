@@ -2,37 +2,31 @@
 
 Welcome to the Snake Game template! This classic game is implemented in Python 3.10 using the Pygame framework and the Entity-Component-System (ECS) design pattern. As a student, you're encouraged to fork this repository and use GitHub Codespaces for a seamless coding experience.
 
-## Directory Structure
+## Project Structure Overview
 
-Snake_Game
-│
-├── LICENSE # The license file for this project.
-├── README.md # This documentation file.
-├── main.py # The main script to run the game.
-├── src # Source code directory.
-│ ├── components # Components used in the ECS design pattern.
-│ │ ├── position.py # Defines the position component.
-│ │ ├── renderable.py # Defines the renderable component.
-│ │ └── velocity.py # Defines the velocity component.
-│ ├── entities # Game entities like the snake and food.
-│ │ ├── food.py # Defines the food entity.
-│ │ └── snake.py # Defines the snake entity.
-│ └── systems # Systems that handle game logic.
-│ ├── collision.py # Handles collision logic.
-│ ├── movement.py # Handles movement logic.
-│ └── render.py # Handles rendering logic.
-└── tests # Tests for the source code.
-├── components # Tests for components.
-│ ├── test_position.py # Tests for the position component.
-│ ├── test_renderable.py # Tests for the renderable component.
-│ └── test_velocity.py # Tests for the velocity component.
-├── entities # Tests for entities.
-│ ├── test_food.py # Tests for the food entity.
-│ └── test_snake.py # Tests for the snake entity.
-└── systems # Tests for systems.
-├── test_collision.py # Tests for the collision system.
-├── test_movement.py # Tests for the movement system.
-└── test_render.py # Tests for the rendering system.
+- **LICENSE**: This file contains the licensing information for the Snake Game template, specifying the terms under which the code can be used, modified, and distributed.
+
+- **README.md**: This is the primary documentation file for the Snake Game template, providing comprehensive instructions, information, and guidance on how to use, understand, and contribute to the project.
+
+- **main.py**: This Python script serves as the entry point for running the Snake Game, containing the game's core logic and gameplay mechanics.
+
+- **src/**: The source code directory containing the core implementation of the Snake Game, organized into subdirectories to manage various game components.
+
+- **src/components/**: This subdirectory houses the components required for implementing the Entity-Component-System (ECS) design pattern, including position, renderable, and velocity components, which define the attributes and behaviors of game entities.
+
+- **src/entities/**: Within this subdirectory, you'll find the definitions for game entities vital to the Snake Game, such as food and snake entities, which play crucial roles in the game's mechanics.
+
+- **src/systems/**: This subdirectory contains the systems responsible for managing different aspects of game logic, including collision detection, movement mechanics, and rendering functions.
+
+- **tests/**: This directory contains test files for validating the Snake Game's functionality using `pytest`.
+
+- **tests/components/**: Subdirectory specifically dedicated to test files for game components, such as position, renderable, and velocity components.
+
+- **tests/entities/**: This subdirectory houses test files related to game entities, encompassing tests for food and snake entities.
+
+- **tests/systems/**: Within this subdirectory, you'll find test files that focus on game systems, which handle various game logic functionalities, including collision handling, movement mechanics, and rendering processes.
+
+## Project Structure Diagram
 
 ![Snake Game Directory Structure](https://showme.redstarplugin.com/d/d:Q7qqVE9i)
 

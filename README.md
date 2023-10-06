@@ -2,6 +2,40 @@
 
 Welcome to the Snake Game template! This classic game is implemented in Python 3.10 using the Pygame framework and the Entity-Component-System (ECS) design pattern. As a student, you're encouraged to fork this repository and use GitHub Codespaces for a seamless coding experience.
 
+## Directory Structure
+
+Snake_Game
+│
+├── LICENSE # The license file for this project.
+├── README.md # This documentation file.
+├── main.py # The main script to run the game.
+├── src # Source code directory.
+│ ├── components # Components used in the ECS design pattern.
+│ │ ├── position.py # Defines the position component.
+│ │ ├── renderable.py # Defines the renderable component.
+│ │ └── velocity.py # Defines the velocity component.
+│ ├── entities # Game entities like the snake and food.
+│ │ ├── food.py # Defines the food entity.
+│ │ └── snake.py # Defines the snake entity.
+│ └── systems # Systems that handle game logic.
+│ ├── collision.py # Handles collision logic.
+│ ├── movement.py # Handles movement logic.
+│ └── render.py # Handles rendering logic.
+└── tests # Tests for the source code.
+├── components # Tests for components.
+│ ├── test_position.py # Tests for the position component.
+│ ├── test_renderable.py # Tests for the renderable component.
+│ └── test_velocity.py # Tests for the velocity component.
+├── entities # Tests for entities.
+│ ├── test_food.py # Tests for the food entity.
+│ └── test_snake.py # Tests for the snake entity.
+└── systems # Tests for systems.
+├── test_collision.py # Tests for the collision system.
+├── test_movement.py # Tests for the movement system.
+└── test_render.py # Tests for the rendering system.
+
+![Snake Game Directory Structure](https://showme.redstarplugin.com/d/d:Q7qqVE9i)
+
 ## Getting Started with GitHub Codespaces
 
 GitHub Codespaces provides a complete, configurable dev environment on top of a powerful VM. This means you can code, build, test, debug, and deploy without needing to set up a local environment.
@@ -29,7 +63,6 @@ Once you're in your Codespace:
 1. Navigate to the game directory:
 
 2. Run the `main.py` script to start the game:
-
 
 ## Contributing
 
